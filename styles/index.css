@@ -1,0 +1,180 @@
+body{
+    background-color: #141019ff;
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* About */
+main #about{
+    padding: 20px 0px;
+    max-width: 450px;
+}
+
+main #about .title h2{
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px rgba(255, 255, 255, 0.6) groove;
+    font-size: 3.4rem;
+    padding: 20px;
+    border-radius: 4px;
+    animation: light 2s infinite alternate;
+}
+
+main #about .title h3{
+    background-color: #141019ff;
+    margin-top: -15px;
+    margin-left: 3px;
+    color: #FFF;
+    width: min-content;
+    width: 80px;
+}
+
+main #about .social{
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main #about .social a{
+    color: #FFF;
+    text-decoration: none;
+    margin: 10px 10px;
+    font-size: 2rem;
+    transition: transform 0.5s;
+}
+
+main #about .social a:hover{
+    transform: scale(1.3);
+}
+
+main #about .more{
+    margin-top: 10px;
+}
+
+main #about .more p{
+    font-size: 1.6rem;
+    color: #FFF;
+    text-align: justify;
+    line-height: 1.1;
+}
+
+main #about .more .quote{
+    font-style: italic;
+}
+
+main #about .more .author-quote{
+    font-style: bold;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Timeline */
+#timeline{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    max-width: 450px;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#timeline .line:not(:last-child){
+    border-left: 1px solid #FFF;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+#timeline .line:last-child{
+    border-left: 1px solid #FFF;
+    padding-left: 20px;
+}
+
+#timeline .line .title-line{
+    display: flex;
+    align-items: center;
+}
+
+#timeline .line .title-line .dot-line{
+    background-color: #FFF;
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+    margin-left: -35px;
+    margin-top: -2px;
+} 
+
+#timeline .line .title-line h4{
+    font-size: 2rem;
+    color: #FFF;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+#timeline .line .subline{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#timeline .line .subline .title-subline{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#timeline .line .subline .title-subline .dot-line{
+    background-color: #FFF;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    margin-left: -30px;
+}
+
+#timeline .line .subline .title-subline h5{
+    font-size: 1.2rem;
+    color: #FFF;
+    margin-left: 20px;
+    font-weight: 400;
+    transition: font-size 0.2s;
+    cursor: pointer;
+}
+
+#timeline .line .subline .title-subline h5:hover{
+    font-size: 1.3rem;
+}
+
+#timeline .line .subline .box{
+    display: none;
+}
+
+/* Other Styles */
+.bold{
+    font-weight: bold;
+}
+
+/* Keyframes */
+@keyframes light {
+    0% {
+        color: rgba(255, 255, 255, 0.6);
+        border-color: rgba(255, 255, 255, 0.6);
+    } 
+    100% {
+        color: rgba(255, 255, 255, 1);
+        border-color: rgba(255, 255, 255, 1);
+    }
+}
