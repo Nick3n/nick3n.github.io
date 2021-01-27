@@ -1,3 +1,7 @@
+* {
+    outline: 0;
+}
+
 body{
     background-color: #141019ff;
     display: flex;
@@ -16,14 +20,14 @@ main{
 /* About */
 main #about{
     padding: 20px 0px;
-    max-width: 450px;
+    width: 400px;
 }
 
 main #about .title h2{
     font-weight: 300;
     color: rgba(255, 255, 255, 0.6);
     border: 1px rgba(255, 255, 255, 0.6) groove;
-    font-size: 3.4rem;
+    font-size: 3rem;
     padding: 20px;
     border-radius: 4px;
     animation: light 2s infinite alternate;
@@ -61,17 +65,21 @@ main #about .social a:hover{
 
 main #about .more{
     margin-top: 10px;
+    width: 100%;
 }
 
 main #about .more p{
     font-size: 1.6rem;
     color: #FFF;
-    text-align: justify;
+    text-align: center;
     line-height: 1.1;
 }
 
 main #about .more .quote{
     font-style: italic;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 main #about .more .author-quote{
@@ -152,10 +160,6 @@ main #about .more .author-quote{
     font-weight: 400;
     transition: font-size 0.2s;
     cursor: pointer;
-}
-
-#timeline .line .subline .title-subline h5:hover{
-    font-size: 1.3rem;
 }
 
 #timeline .line .subline .box{
